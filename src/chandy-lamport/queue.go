@@ -2,7 +2,7 @@ package chandy_lamport
 
 import "container/list"
 
-// Define a queue -- simple implementation over List
+// Queue Define a queue -- simple implementation over List
 type Queue struct {
 	elements *list.List
 }
@@ -12,7 +12,7 @@ func NewQueue() *Queue {
 }
 
 func (q *Queue) Empty() bool {
-	return (q.elements.Len() == 0)
+	return q.elements.Len() == 0
 }
 
 func (q *Queue) Push(v interface{}) {

@@ -7,6 +7,7 @@ import (
 
 // =================================
 //  Event logger, internal use only
+//  事件记录器，仅供内部使用
 // =================================
 
 type Logger struct {
@@ -16,8 +17,9 @@ type Logger struct {
 }
 
 type LogEvent struct {
-	serverId     string
+	serverId string
 	// Number of tokens before execution of event
+	// 事件执行前的令牌数量
 	serverTokens int
 	event        interface{}
 }
